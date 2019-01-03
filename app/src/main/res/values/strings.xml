@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Campaign Tester</string>
+    <string name="home">home</string>
+    <string name="profile">profile</string>
+    <string name="settings">settings</string>
+    <string name="shared_transition_text">sharedTransition</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="no_account_sign_up">No Account? Sign Up</string>
+    <string name="already_have_an_account_login">Already have an account? Log in</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="first_name">First Name (Optional)</string>
+    <string name="last_name">Last Name (Optional)</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="submit">Submit</string>
+    <string name="retry">Retry</string>
+    <string name="fetch_error">An error occurred</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="campaign">Campaign</string>
+    <string name="tester">Tester</string>
+    <string name="terms_and_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="create_your_new_account_using">Create your new account using :</string>
+    <string name="password_req">8-20 letters, numbers and/or special characters</string>
+    <string name="terms_text">By signing up, you agree to our user agreement\nand privacy notice</string>
+    <string name="passwords_must_match">Passwords must match</string>
+    <string name="log_in_using">Log In using :</string>
+    <string name="don_t_have_an_account_create_account">Don’t have an account? Create Account</string>
+    <string name="create_account">Create Account</string>
+    <string name="available_videos">Available Videos</string>
+    <string name="logout">Logout</string>
+    <string name="logout_confirm">Are you sure you want to log out?</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">cancel</string>
+    <string name="error_finding_video_try_another">Error finding this video. Try Another</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title">Title</string>
+    <string name="save">Save</string>
+    <string name="share">Share</string>
+</resources>

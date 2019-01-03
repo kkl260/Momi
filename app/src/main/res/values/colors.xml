@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#369347</color>
+    <color name="colorPrimaryDark">#943978</color>
+    <color name="colorAccent">#943978</color>
+    <color name="colorThird">#8668c6</color>
+
+    <color name="appColorGray">#eae9e9</color>
+    <color name="appColorGrayDark">#3e4a59</color>
+    <color name="textColor">#727272</color>
+
+    <color name="campaignBackgroundColor">#E6535353</color>
+</resources>
