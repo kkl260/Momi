@@ -37,5 +37,10 @@
                 app:exitAnim="@anim/slide_out_left"/>
     </fragment>
     <fragment android:id="@+id/itemDetailFragment" android:name="com.tsl.momi.ui.itemDetail.ItemDetailFragment"
-              android:label="ItemDetailFragment"/>
+              android:label="ItemDetailFragment">
+        <action android:id="@+id/action_itemDetailFragment_to_chatFragment" app:destination="@id/chatFragment"
+                app:enterAnim="@anim/slide_in_right" app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment android:id="@+id/chatFragment" android:name="com.tsl.momi.ui.chat.ChatFragment"
+              android:label="ChatFragment"/>
 </navigation>

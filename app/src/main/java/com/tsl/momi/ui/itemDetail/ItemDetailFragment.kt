@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import androidx.navigation.Navigation
 import com.bumptech.glide.Glide
 import com.orhanobut.hawk.Hawk
 import kotlinx.android.synthetic.main.fragment_camera.*
@@ -34,5 +35,6 @@ class ItemDetailFragment : Fragment() {
         val donationItem = Hawk.get<DonationItem>(CURRENT_DONATION)
         item_name.text = donationItem.title
         Glide.with(view).asBitmap().load(Utils.getByte(donationItem.imagePath)).into(item_image)
+        ask_button.setOnClickListener { Navigation.findNavController(view).navigate(ItemDetailFragmentDirections.actionItemDetailFragmentToChatFragment()) }
     }
 }
