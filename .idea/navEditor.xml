@@ -8,6 +8,18 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
+                  <entry key="ItemListFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-383" />
+                            <option name="y" value="814" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="cameraDetailsFragment">
                     <value>
                       <LayoutPositions>
@@ -16,6 +28,15 @@
                             <option name="x" value="-359" />
                             <option name="y" value="370" />
                           </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_cameraDetailsFragment_to_itemListFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
                         </option>
                       </LayoutPositions>
                     </value>
@@ -41,65 +62,13 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="campaignListFragment">
+                  <entry key="itemDetailFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-383" />
-                            <option name="y" value="814" />
-                          </Point>
-                        </option>
-                        <option name="myPositions">
-                          <map>
-                            <entry key="action_campaignListFragment_to_videoFragment">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                            <entry key="action_campaignListFragment_to_welcomeFragment">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                          </map>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
-                  <entry key="loginFragment">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="-578" />
-                            <option name="y" value="3" />
-                          </Point>
-                        </option>
-                        <option name="myPositions">
-                          <map>
-                            <entry key="action_loginFragment_to_campaignList">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                            <entry key="action_loginFragment_to_signupFragment">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                          </map>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
-                  <entry key="profile">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="12" />
-                            <option name="y" value="12" />
+                            <option name="x" value="-142" />
+                            <option name="y" value="809" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -117,56 +86,6 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="signupFragment">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="-578" />
-                            <option name="y" value="-319" />
-                          </Point>
-                        </option>
-                        <option name="myPositions">
-                          <map>
-                            <entry key="action_signupFragment_to_campaignList">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                            <entry key="action_signupFragment_to_loginFragment">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                          </map>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
-                  <entry key="userDetailsFragment">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="324" />
-                            <option name="y" value="12" />
-                          </Point>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
-                  <entry key="videoFragment">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="-175" />
-                            <option name="y" value="330" />
-                          </Point>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
                   <entry key="welcomeFragment">
                     <value>
                       <LayoutPositions>
@@ -178,12 +97,12 @@
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_welcomeFragment_to_cameraFragment">
+                            <entry key="action_welcomeFragment_to_ItemListFragment">
                               <value>
                                 <LayoutPositions />
                               </value>
                             </entry>
-                            <entry key="action_welcomeFragment_to_loginFragment">
+                            <entry key="action_welcomeFragment_to_cameraFragment">
                               <value>
                                 <LayoutPositions />
                               </value>

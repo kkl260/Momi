@@ -15,6 +15,7 @@ import com.orhanobut.hawk.Hawk
 import com.tsl.momi.R
 import com.tsl.momi.data.models.DonationItem
 import com.tsl.momi.di.ViewModelFactory
+import com.tsl.momi.utils.CURRENT_DONATION
 import kotlinx.android.synthetic.main.fragment_item_list.*
 
 class ItemListFragment : Fragment() {
@@ -49,12 +50,12 @@ class ItemListFragment : Fragment() {
         })
         swipe_refresh.setOnRefreshListener {viewModel.getCampaigns()}
 
-//        mAdapter.setOnItemClickListener { adapter, view, position ->
-//            // we dont need to store all videos to room so just save this video to sharedprefs
-//            val campaignVideo = mDonationList[position]
-//            Hawk.put(VideoFragment.CAMPAIGN_VIDEO, campaignVideo)
-//            Navigation.findNavController(view).navigate(CampaignListFragmentDirections.actionCampaignListFragmentToVideoFragment())
-//        }
+        mAdapter.setOnItemClickListener { adapter, view, position ->
+            // we dont need to store all videos to room so just save this video to sharedprefs
+            val item = mDonationList[position]
+            Hawk.put(CURRENT_DONATION, item)
+            Navigation.findNavController(view).navigate(ItemListFragmentDirections.actionItemListFragmentToItemDetailFragment())
+        }
     }
 
 
