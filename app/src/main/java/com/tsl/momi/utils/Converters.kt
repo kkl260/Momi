@@ -1,7 +1,6 @@
 package com.tsl.momi.utils
 
 import androidx.room.TypeConverter
-import com.tsl.momi.data.models.Avatar
 import java.util.*
 import com.google.gson.Gson
 
@@ -16,15 +15,5 @@ class Converters {
     @TypeConverter
     fun dateToTimestamp(date: Date?): Long? {
         return date?.time?.toLong()
-    }
-
-    @TypeConverter
-    fun jsonToAvatar(json: String?): Avatar? {
-        return gson.fromJson(json, Avatar::class.java)
-    }
-
-    @TypeConverter
-    fun avatarToJson(avatar: Avatar?): String? {
-        return gson.toJson(avatar)
     }
 }
