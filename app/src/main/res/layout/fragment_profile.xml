@@ -7,23 +7,101 @@
         android:layout_height="match_parent"
         tools:context="com.tsl.momi.ui.profile.ProfileFragment">
 
+    <ImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp" android:src="@drawable/prof_kid"
+            android:id="@+id/imageView" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp" app:layout_constraintTop_toTopOf="parent"/>
     <TextView
-            android:id="@+id/profileTextView"
+            android:text="Gemma Johnson"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    <Button
-            android:text="Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/button" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/profileTextView" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/colorThird"
+            android:textStyle="bold"
+            android:textSize="@dimen/_16sdp"
+            android:id="@+id/name" android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintVertical_bias="1.0"/>
+            android:layout_marginStart="8dp"/>
+    <TextView
+            android:text="Kendall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorThird"
+            android:id="@+id/location"
+            android:textSize="@dimen/_10sdp" app:layout_constraintTop_toBottomOf="@+id/name"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+            android:text="I have a boy who has such a giving heart. I'd love to share and receive items to warm and loving homes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            android:id="@+id/subtitle"
+            android:textSize="@dimen/_10sdp" app:layout_constraintTop_toBottomOf="@+id/location"
+            android:layout_marginEnd="68dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="68dp"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:weightSum="2"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/button_row"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="8dp"
+                  app:layout_constraintTop_toBottomOf="@+id/subtitle">
+
+        <Button android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/ask_button"
+                android:backgroundTint="@color/textColor"
+                android:padding="@dimen/_10sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:text="Volunteer"
+                android:textAllCaps="false"
+        />
+
+        <Button android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/clean_out_button"
+                android:backgroundTint="@color/colorPrimary"
+                android:padding="@dimen/_10sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:text="Clean Out Closet"
+                android:textAllCaps="false"
+        />
+
+    </LinearLayout>
+
+    <ImageView android:layout_width="match_parent" android:layout_height="50dp"
+               android:layout_marginStart="20dp"
+               android:layout_marginEnd="20dp"
+               android:src="@drawable/ic_icons"
+               android:id="@+id/icons"
+               app:layout_constraintTop_toBottomOf="@+id/button_row"/>
+
+    <TextView
+            android:text="My Gives"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorThird"
+            android:textSize="@dimen/_12sdp"
+            android:id="@+id/my_gives" android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/icons" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerview"
+            app:layout_constraintTop_toBottomOf="@id/my_gives">
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

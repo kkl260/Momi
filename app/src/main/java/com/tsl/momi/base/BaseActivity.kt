@@ -50,11 +50,11 @@ class BaseActivity : AppCompatActivity(), NavController.OnDestinationChangedList
                     true
                 }
                 R.id.chat -> {
-                    // Do something for navigation item 1
+                    navController.navigate(R.id.chatFragment)
                     true
                 }
                 R.id.profile -> {
-                    // Do something for navigation item 2
+                    navController.navigate(R.id.profileFragment)
                     true
                 }
                 else -> false
@@ -66,7 +66,7 @@ class BaseActivity : AppCompatActivity(), NavController.OnDestinationChangedList
     override fun onDestinationChanged(controller: NavController, destination: NavDestination, arguments: Bundle?) {
         when(destination.id){
             R.id.cameraFragment, R.id.cameraDetailsFragment -> {bottom_navigation.visibility=GONE}
-            else -> {appBar.visibility= VISIBLE}
+            else -> {bottom_navigation.visibility= VISIBLE}
         }
     }
 
