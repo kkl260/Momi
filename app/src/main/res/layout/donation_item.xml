@@ -9,6 +9,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:padding="@dimen/_10sdp"
+        android:foreground="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
         app:cardElevation="8dp"
         app:cardUseCompatPadding="true"
         app:cardCornerRadius="4dp">
